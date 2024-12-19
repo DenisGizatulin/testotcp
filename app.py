@@ -57,7 +57,7 @@ def log_issue():
         with open("issues.txt", "a") as file:
             file.write('-' + note + "\n")
         note_entry.delete(0, 'end')
-        show_notes()
+
     else:
         messagebox.showwarning("Предупреждение", "Введите сообщение об ошибке.")
 
@@ -78,7 +78,7 @@ def make_note():
         with open("notes.txt", "a") as file:
             file.write('-' + note + "\n")
         note_entry.delete(0, 'end')
-        show_notes()
+
     else:
         messagebox.showwarning("Предупреждение", "Введите заметку.")
 
